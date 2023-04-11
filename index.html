@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Convertir imágenes a formato webp y viceversa</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+  </head>
+
+  <body>
+    <div class="main-div">
+      <h1 class="titulo">CONVERTIR A WEBP JPG Y PNG</h1>
+      <label for="inputFile" class="custom-file-upload">
+        Subir imagen ⏏️
+      </label>
+      <input type="file" id="inputFile" style="visibility: hidden;">
+      <div class="container-btn-convertir">
+        <button id="convertToWebp">Convertir a WebP <span class="span-icon">🔄️</span></button>
+        <button id="convertToJpg">Convertir a JPG <span class="span-icon">🔄️</span></button>
+        <button id="convertToPng">Convertir a PNG <span class="span-icon">🔄️</span></button>
+      </div>
+      <p class="error-imagen">Primero sube una imagen.</p>
+      <p class="texto-imagen">Tu imagen se mostrará aqui abajo cuando la conviertas a otro formato.</p>
+      <img id="preview">
+      <div id="message">¡La imagen se ha convertido con éxito!👌</div>
+
+      <a id="downloadLink" download><button id="downloadButton" disabled>Descargar imagen ⬇️</button></a>
+    </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
